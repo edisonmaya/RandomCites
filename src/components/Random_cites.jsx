@@ -9,9 +9,9 @@ const randomCites = ({ quote, setQuote, change, setChange }) => {
     setQuote(getRandomData(dbQuotes))
     setChange(getRandomData(dbImage))
   }
-  //VISIBLE    style={{ backgroundImage: `url(${change.image})` }}
+  //VISIBLE    
   return (
-    <section className="container" >
+    <section className="container" style={{ backgroundImage: `url(${change.image})` }}>
       <div className='title'>GALLETAS DE LA FORTUNA</div>
       <section className='container_sub_phra'>
         <button onClick={handlerLuck} className='subtitle'>Probar mi suerte</button>
@@ -19,7 +19,7 @@ const randomCites = ({ quote, setQuote, change, setChange }) => {
           <h3 className='phrase'>{quote.phrase}</h3>
         </div>
       </section>
-      <footer className='footer'>{quote.author}</footer>
+      <footer className='footer'>Author: {quote.author}</footer>
     </section>
   )
 }
