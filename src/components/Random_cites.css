@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+*{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public/backgroundFortune1.png");
+    background-position-x: center;
+    background-position-y: center ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    width: 320px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 #FFA645, 
+                2px -2px 0 #FFA645, 
+                -2px 2px 0 #FFA645, 
+                2px 2px 0 #FFA645;
+    font-size: xx-large;
+    padding-top: 2rem;
+}
+.container_sub_phra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+.phrase,.subtitle{    
+    font-weight: 400;
+    font-size: 1em;
+}
+.subtitle{
+    background-color: #FFA645;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #893446;
+    color: #893446;
+}
+.container__phrase{   
+    display: flex;
+    max-height: 5rem;
+    max-width: 18rem;
+    place-items: center;
+    background-color: #fff;
+    padding: 3rem 1rem; 
+    border: 3px solid #6894B4;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 2rem;
+    font-size: small;
+    background-color:#fff9;
+    margin-top: 3rem;
+}
+
