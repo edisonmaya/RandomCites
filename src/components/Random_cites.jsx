@@ -1,17 +1,17 @@
 import './Random_cites.css'
 import getRandomData from '../utils/getRandomData'
 import dbQuotes from '../db/quotes.json'
-import dbImage from '../db/image.json'
+//import dbImage from '../db/image.json'
 
-const randomCites = ({ quote, setQuote, change, setChange }) => {
+const randomCites = ({ quote, setQuote, change, setChange, background }) => {
   //LOGICA
   const handlerLuck = () => {
     setQuote(getRandomData(dbQuotes))
-    setChange(getRandomData(dbImage))
+    setChange(getRandomData(background))
   }
-  //VISIBLE    
+  //VISIBLE    style={ {backgroundImage: `url(${change.image})` }}
   return (
-    <section className="container" style={{ backgroundImage: `url(${change.image})` }}>
+    <section className="container" >
       <div className='title'>GALLETAS DE LA FORTUNA</div>
       <section className='container_sub_phra'>
         <button onClick={handlerLuck} className='subtitle'>Probar mi suerte</button>
