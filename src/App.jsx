@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Random_cites from './components/Random_cites.jsx'
 import getRandomData from './utils/getRandomData.js'
 import quotes from './db/quotes.json'
-import image from './db/image.json'
+//import image from './db/image.json'
 
 
 const background =["background1","background2","background3"]

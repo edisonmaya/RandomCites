@@ -3,7 +3,7 @@ import getRandomData from '../utils/getRandomData'
 import dbQuotes from '../db/quotes.json'
 //import dbImage from '../db/image.json'
 
-const randomCites = ({ quote, setQuote, change, setChange, background }) => {
+const randomCites = ({ quote, setQuote,  setChange, background }) => {
   //LOGICA
   const handlerLuck = () => {
     setQuote(getRandomData(dbQuotes))
